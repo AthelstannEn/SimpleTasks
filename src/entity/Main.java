@@ -44,10 +44,10 @@ public class Main {
 		Collections.sort(list);
 		
 		while(true){
-			System.out.println("Enter 1 Вибрати Методи Групи 1: Пошук за ім'ям, пошук за ставкою на виграш, пошук за квитком, пошук за кодом ивграшу  ");
-			System.out.println("Enter 2 Вибрати Методи Групи 2: Сортування за квитком, сорутвання за ім'ям, сортування за ставкою");
-			System.out.println("Enter 3 Вибрати Методи Групи 3: Видалення  гравця, змінна його данних");
-			System.out.println("Enter 4 Зіграти в гру");
+			System.out.println("Enter 1 Select Group Method 1: Search by name, search by winning bid, ticket search, search by code, and earn money.  ");
+			System.out.println("Enter 2 Select Group 2 Methods: Sort by Tick, Sort by Name, Sort by Rate");
+			System.out.println("Enter 3 Select Group Methods from: Deleting a player, changing its data");
+			System.out.println("Enter 4Game");
 			System.out.println("Enter 0 EXIT");
 			switch (sc.next()) {
 			case "1":
@@ -163,12 +163,12 @@ public class Main {
 	}
 	
 	static void findByWin(){
-		System.out.println("Введіть параметри по яким потрібно знайти гравця: ");
+		System.out.println("Enter the search criteria: ");
 		System.out.println("Enter name");
 		String name = sc.next();
-		System.out.println("Enter Rate - Ставку на виграш");
+		System.out.println("Enter Rate - bet");
 		int rate= sc.nextInt();
-		System.out.println("Enter kode - код вийграшу");
+		System.out.println("Enter kode - code");
 		long kode = sc.nextLong();
 		System.out.println("Enter 1 to choise JWIn One");
 		System.out.println("Enter 2 to choise Jwin Two");
@@ -213,8 +213,8 @@ public class Main {
 	
 	
 	static void findByCode(){
-		System.err.println("  КОД ВИГРАШУ МОЖЕ БУТИ В ДІАПАЗОНІ: ");
-		System.err.println("ВІД 00000 до 99999  ");
+		System.err.println("  THE RETURN CODE MAY BE IN THE RANGE: ");
+		System.err.println("at 00000 for 99999  ");
 		System.out.println("Enter of min:  ");
 		int min = sc.nextInt();
 		System.out.println("Enter of max: ");
